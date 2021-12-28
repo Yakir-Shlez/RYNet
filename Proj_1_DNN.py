@@ -102,8 +102,8 @@ sns.heatmap(confusion, annot=True, fmt='g', ax=ax);
 ax.set_xlabel('Predicted labels');
 ax.set_ylabel('True labels'); 
 ax.set_title('Confusion Matrix'); 
-ax.xaxis.set_ticklabels(['business', 'health']);
-ax.yaxis.set_ticklabels(['health', 'business']);
+ax.xaxis.set_ticklabels(['NORMAL', 'PNEUMONIA']);
+ax.yaxis.set_ticklabels(['NORMAL', 'PNEUMONIA']);
 
 #Precision and Recall calculations
 print("Precision: " + str(confusion.numpy()[0,0] / (confusion.numpy()[0,0] + confusion.numpy()[0,1])));
